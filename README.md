@@ -4,16 +4,17 @@ Un recopilatorio de mis trabajos o códigos elaborados en el curso (Programació
   <h5>Creditos.</h5>
 <body>Profesor(a), docentes:</body>
 
-- Yanitza Rivero
+- Yanitza Rivero.
+- Ing. José Ricardo Vargas (<b>jefe del departamento</b>).
 
 <body>Compañeros de <i>desktop</i>:</body>
 
 - <b>Nathaniel V. Guzman F.</b>
-- <b>Ariana.. </b>
+- <b>Ariana.. </b>.
 
 <body>Grupo, colegas del curso:</body>
 
-- Gabriel..
+- Gabriel.. .
 - Jose Joaquín Bogarin. 
 - Victor Marquez. 
 
