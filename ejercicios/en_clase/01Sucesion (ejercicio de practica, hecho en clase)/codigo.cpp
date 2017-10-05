@@ -18,11 +18,15 @@ int fact, fact0, suma0, suma ; /* FACTorial acumulativo. FACT0rial = función.
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
+
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
+
+x =Edit1->Text.ToInt() ;
+y =Edit2->Text.ToInt() ;
 
 fact = 1 ;
 n = 1    ;  // contador.
@@ -56,4 +60,3 @@ else {
 }
 }
 //---------------------------------------------------------------------------
-

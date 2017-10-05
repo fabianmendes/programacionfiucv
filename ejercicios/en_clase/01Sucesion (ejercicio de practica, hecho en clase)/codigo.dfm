@@ -38,7 +38,6 @@ object Form1: TForm1
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
-    OnClick = Label2Click
   end
   object Label3: TLabel
     Left = 77
