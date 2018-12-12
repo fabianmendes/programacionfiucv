@@ -9,16 +9,42 @@
 #pragma resource "*.dfm"
 TForm1 *Form1;
 
+/*
+La tarifa de la C.A. La electricidad del Sur es la siguiente:
+Bs. 720 con derecho a 24 Kwh
+Bs. 81 por Kwh por los siguientes 126 Kwh
+Bs. 40 por Kwh por los siguientes 150 Kwh
+Bs. 30 por Kwh por los siguientes 300 Kwh
+Bs. 26 por Kwh por los siguientes 600 Kwh
+Bs. 21 por Kwh por los siguientes 800 Kwh
+Bs. 17 por Kwh por el resto del consumo
+
+Dicha tarifa se verá afectada por un factor P que dependerá de la zonificación según la
+siguiente tabla:
+Zona Factor P
+Residencial SubUrbana 2/5
+Residencial Urbana 4/5
+Residencial Lujo 6/5
+Turismo 8/5
+Industrial 14/5
+
+-> Realice un programa en Builder C que determine el monto a pagar a la compañía de
+electricidad si el usuario da el consumo total en Kwh.
+Utilice un Edit para el consumo, un RadioGroup para seleccionar la zona, combinado
+con un switch para seleccionar el factor P y un ShowMessage para mostrar el
+resultado
+*/
+
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 int n = 0, H, PAGAR = 720, BsX, Total, Consumo, Consmf, P;
 
 float Total, P;
-
 
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button1Click(TObject *Sender)
