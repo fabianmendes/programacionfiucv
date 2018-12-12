@@ -1,0 +1,65 @@
+int n = 0, H, PAGAR = 720, BsX, Total, Consumo, Consmf, P;
+
+float Total, P;
+
+void Button1Click{
+// ^ esto es simplemente el Button Click cotidiano del programa.
+
+
+Consumo = Edit1->Text.ToDouble();  // dato dado por el user
+
+
+while(Consumo > 0){
+
+	switch(n){
+
+	CASE 0:
+		// PAGAR= 720; // ojo SINO debo definirlo al principio del cod.
+		BsX = 0; H = 24;
+	CASE 1: 
+		BsX = 81; H = 126;
+	CASE 2: 
+		BsX = 40; H = 150;
+	CASE 3: 
+		BsX = 30; H = 300;
+	CASE 4: 
+		BsX = 26; H = 600;
+	CASE 5: 
+		BsX = 21; H = 80;
+	CASE 6: 
+		BsX = 17; H = 1;
+	}
+
+	if (n == 6){
+		n--;
+	}
+	
+	Consmf = Consumo - H ;
+	Dif = Consumo - Consmf ;
+	
+	if (Consmf < 0){
+		Dif = Consmf + H ;
+	}
+	n++ ;
+}
+
+PAGAR = PAGAR + (BsX * Dif) ;
+
+Switch(RadioGroupIdexBLABLAH){
+
+Case 0:
+	P = ;  /* simplemente le asignaremos le asignaremos el 
+	valor correspondiente al factor 'P' según la localidad
+	*/
+Case 1:
+	P =  ; // en cada case van c/u de los valores que estan en la tabla.
+[...]
+
+Case :
+	P = ;
+}
+
+Total = 
+Label#->Caption= "A pagar: " + Ansistring() ;
+
+} // llave para cierre del Button1Click
